@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 2s # Fast 2-second scrapes for testing locally
+
+scrape_configs:
+  - job_name: 'nodejs_pool'
+    static_configs:
+      - targets: ['host.docker.internal:3000']
